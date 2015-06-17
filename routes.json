@@ -1,0 +1,5 @@
+{
+  "/api/:resource": "/:resource",
+  "/api/:resource/:id": "/:resource/:id",
+  "/api/:parent/:parentId/:resource": "/:parent/:parentId/:resource"
+}

@@ -1,0 +1,122 @@
+{
+  "connectors": [
+    {
+      "configurations": [
+        {
+          "createdAt": 1434087234985,
+          "description": "Id",
+          "id": 1,
+          "mappingField": 110,
+          "name": "id",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128071225,
+          "description": "test1",
+          "id": 2,
+          "mappingField": 110,
+          "name": "test1",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128071654,
+          "description": "test2",
+          "id": 3,
+          "mappingField": 110,
+          "name": "test2",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128072044,
+          "description": "test3",
+          "id": 4,
+          "mappingField": 110,
+          "name": "test3",
+          "type": "Additional"
+        }
+      ],
+      "createdAt": 1434069788638,
+      "description": "Connector to test connectivity to ecommerce",
+      "id": 1,
+      "logo": "",
+      "name": "Ecommerce Connector",
+      "supportURL": "http://secondphase.net",
+      "vendorName": "secondphase"
+    },
+    {
+      "configurations": [
+        {
+          "createdAt": 1434087234986,
+          "description": "uniqueid",
+          "id": 5,
+          "mappingField": 109,
+          "name": "uniqueid",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128071226,
+          "description": "test4",
+          "id": 6,
+          "mappingField": 113,
+          "name": "test4",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128071655,
+          "description": "test5",
+          "id": 7,
+          "mappingField": 110,
+          "name": "test5",
+          "type": "Mandatory"
+        },
+        {
+          "createdAt": 1434128072045,
+          "description": "test6",
+          "id": 8,
+          "mappingField": 112,
+          "name": "test6",
+          "type": "Additional"
+        }
+      ],
+      "createdAt": 1434069788638,
+      "description": "Connector to test connectivity to erp",
+      "id": 2,
+      "logo": "",
+      "name": "Erp Connector",
+      "supportURL": "http://secondphase.net",
+      "vendorName": "secondphase"
+    }
+  ],
+  "fields": [
+    {
+      "id": 112,
+      "name": "ITEM_COUNTRY",
+      "type": "string"
+    },
+    {
+      "id": 110,
+      "name": "ITEM_NUM",
+      "type": "long"
+    },
+    {
+      "id": 108,
+      "name": "ITEM_PIK",
+      "type": "long"
+    },
+    {
+      "id": 109,
+      "name": "MFR_UCC_NUM",
+      "type": "long"
+    },
+    {
+      "id": 111,
+      "name": "USER_NUM",
+      "type": "long"
+    },
+    {
+      "id": 113,
+      "name": "ITEM_INDUSTRY",
+      "type": "string"
+    }
+  ]
+}

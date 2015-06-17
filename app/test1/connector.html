@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-12">
+	<h2>Manage Connectors</h2>
+	<div class="row">
+	    <div class="col-md-4">
+		<p>List of Connectors :</p>
+                <p ng-if="connectors.length==0">Please contact support to subscribe to connectors</p>
+		<table ng-if="connectors.length>0" class="table table-condensed table-bordered table-striped">
+		    <thead>
+			<tr>
+			    <th>Select</th>
+			    <th>Name</th>
+			    <th>Vendor Name</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr ng-repeat="connector in connectors | orderBy:['name']">
+			    <td><input name="selectedConnector" type="radio" data-ng-click="loadConfigs(connector)"/></td>
+			    <td>{{ connector.name }}</td>
+			    <td>{{ connector.vendorName }}</td>
+			</tr>
+		    </tbody>
+		</table>
+		<button type="button" class="btn btn-default" data-ng-click="newConnector();">New Connector</button>
+	    </div>
+        <div class="col-md-8">
+		<p>Manage Configurations</p>
+                <p ng-if="!selectedConnector">Select a connector from the left to manage configuration</p>
+
+		<table class="table table-condensed table-bordered table-striped" ng-if="selectedConnector">
+		    <thead>
+			<tr>
+			    <th>Attribute Name</th>
+			    <th>Attribute Type</th>
+			    <th>Mapping Field</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr ng-repeat="configuration in configurations | orderBy:['name']">
+			    <td>{{ configuration.name }}</td>
+			    <td>{{ configuration.type }}</td>
+          <td>
+							<select data-ng-model="configuration.mappingField" data-ng-options="field.name for field in fields | orderBy:['name']"></select>
+          </td>
+			</tr>
+		    </tbody>
+		</table>
+                <button type="button" class="btn btn-default" data-ng-click="submit(configurations);">Save</button>
+	    </div>
+	</div>
+    </div>
+</div>
