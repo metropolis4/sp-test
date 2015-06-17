@@ -6,7 +6,7 @@
           "createdAt": 1434087234985,
           "description": "Id",
           "id": 1,
-          "mappingField": 110,
+          "mappingField": 111,
           "name": "id",
           "type": "Mandatory"
         },
@@ -14,7 +14,7 @@
           "createdAt": 1434128071225,
           "description": "test1",
           "id": 2,
-          "mappingField": 110,
+          "mappingField": 111,
           "name": "test1",
           "type": "Mandatory"
         },
@@ -22,7 +22,7 @@
           "createdAt": 1434128071654,
           "description": "test2",
           "id": 3,
-          "mappingField": 110,
+          "mappingField": 112,
           "name": "test2",
           "type": "Mandatory"
         },
@@ -30,7 +30,7 @@
           "createdAt": 1434128072044,
           "description": "test3",
           "id": 4,
-          "mappingField": 110,
+          "mappingField": 112,
           "name": "test3",
           "type": "Additional"
         }
